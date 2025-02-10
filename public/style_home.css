@@ -1,0 +1,330 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+body {
+   background-color: #eeeeea;
+}
+
+ .container1{
+    background: url(images/home-bg.jpg) no-repeat center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .navbar{
+    background-color: #fff;
+    height: 80px;
+    width: 97%;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+ }
+ .navbar-brand{
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+ }
+ .login-button {
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+ }
+
+ .login-button:hover{
+    background-color: #00b383;
+ }
+
+ .navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+ }
+
+ .navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline:none;
+ }
+
+ .nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+ }
+
+ .nav-link:hover, .nav-link:active {
+    color: #000;
+ }
+
+ .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+ }
+
+ .nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+ }
+
+ .about-head{
+   margin: 5rem;
+   padding: 2rem;
+   text-align: center;
+ }
+
+ .about-body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .card{
+   margin: 1rem 4rem;
+   padding: 1rem;
+   height: 300px;
+   border: 5px black solid;
+   border-radius: 50px;
+   background-color: #fdfcdc;
+ }
+
+ .card:hover{
+   background-color: rgb(170, 154, 190) ;
+   transition: ease-in-out 0.3s;
+ }
+
+ .book-button{
+   display: inline;
+   color: #fff;
+   border: solid transparent 2px;
+   border-radius: 50px;
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 0.7rem 3rem;
+ }
+
+ .book-btn {
+   background-color: #009970;
+   color: #fff;
+   font-size: 30px;
+   padding: 8px 20px;
+   border-radius: 50px;
+   text-decoration: none;
+   transition: 0.3s background-color;
+   
+}
+
+.container4 {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container-dst {
+   height: 400px;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: start;
+}
+
+.card-dst {
+   width: 80px;
+   border-radius: .75rem;
+   background-size: cover;
+   cursor: pointer;
+   overflow: hidden;
+   border-radius: 2rem;
+   margin: 0 10px;
+   display: flex;
+   align-items: flex-end;
+   transition: .6s cubic-bezier(.28,-0.03,0,.99);
+   box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card-dst> .row {
+   color: white;
+   display: flex;
+   flex-wrap: nowrap;
+}
+
+.card-dst> .row > .icon {
+   background: #223;
+   color: white;
+   border-radius: 50%;
+   width: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 15px;
+}
+
+.card-dst > .row > .description {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   overflow: hidden;
+   height: 80px;
+   width: 520px;
+   opacity: 0;
+   transform: translateY(30px);
+   transition-delay: .3s;
+   transition: all .3s ease;
+}
+
+.description p {
+   color: #b0b0ba;
+   padding-top: 5px;
+}
+.description h4 {
+   text-transform: uppercase;
+}
+
+input {
+   display: none;
+}
+
+input:checked + label {
+   width: 600px;
+}
+
+input:checked + label .description {
+   opacity: 1 !important;
+   transform: translateY(0) !important;
+}
+
+.card-dst[for="c1"] {
+   background-image: url('images/kochi.jpg');
+}
+.card-dst[for="c2"] {
+   background-image: url('images/varkala.jpg');
+}
+.card-dst[for="c3"] {
+   background-image: url('images/calicut.avif');
+}
+.card-dst[for="c4"] {
+   background-image: url('images/trichur.jpg');
+}
+
+
+
+.container5 p {
+   text-align: center;
+   margin: 10px;
+   color: rgba(0, 0, 0, 0.6);
+   letter-spacing: 2px;
+ }
+ 
+ .container5 h1 {
+   text-align: center;
+   margin-bottom: 40px;
+ }
+ .card-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .card-contact {
+   background-color: white;
+   padding: 70px 50px 0 50px;
+   width: 25%;
+   max-width: 350px;
+   margin: 10px 10px;
+   border-radius: 10px;
+ }
+ 
+ .card-contact .profile-img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin: auto;
+ }
+ 
+ .card-contact .profile-img img {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .content-contact {
+   text-align: center;
+ }
+ 
+ .content-contact h3 {
+   font-size: 1.4rem;
+   margin-top: 25px;
+   color: rgba(0, 0, 0, 0.9);
+ }
+ 
+ .content-contact p {
+   color: rgba(0, 0, 0, 0.7);
+   letter-spacing: 1px;
+   margin: 0;
+ }
+ 
+ .social-media {
+   margin-top: 30px;
+ }
+ 
+ .social-media i {
+   font-size: 1.2rem;
+   color: rgba(0, 0, 0, 0.8);
+   background-color: #ebeaea;
+   padding: 15px;
+   margin: 0 3px;
+   border-top-right-radius: 15px;
+   border-top-left-radius: 15px;
+   cursor: pointer;
+   transition: 0.5s;
+ }
+ 
+ .social-media i:hover {
+   background-color: #dddddd;
+   color: rgba(0, 0, 0, 0.9);
+ }
+ 
+ @media (max-width: 969px) {
+   .card-wrapper {
+     flex-wrap: wrap;
+   }
+   .card-contact {
+     width: 50%;
+   }
+ }
+ 
+ @media (max-width: 500px) {
+   .card-wrapper {
+     flex-wrap: wrap;
+   }
+   .card-contact {
+     width: 100%;
+     margin: 20px;
+   }
+ }
+ 
+ .fa {
+   padding: 20px;
+   font-size: 30px;
+   width: 30px;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 50%;
+ }

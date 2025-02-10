@@ -1,0 +1,123 @@
+ .container1{
+    background: url(images/home-bg.jpg) no-repeat center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .navbar{
+    background-color: #fff;
+    height: 80px;
+    width: 97%;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+ }
+ .navbar-brand{
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+ }
+ .login-button {
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+ }
+
+ .login-button:hover{
+    background-color: #00b383;
+ }
+
+ .navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+ }
+
+ .navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline:none;
+ }
+
+ .nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+ }
+
+ .nav-link:hover, .nav-link:active {
+    color: #000;
+ }
+
+ .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+ }
+
+ .nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+ }
+
+ .about-head{
+   margin: 5rem;
+   padding: 2rem;
+   text-align: center;
+ }
+
+ .about-body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .card{
+   margin: 1rem 4rem;
+   padding: 1rem;
+   height: 300px;
+   border: 5px black solid;
+   border-radius: 50px;
+   background-color: #fdfcdc;
+ }
+
+ .card:hover{
+   background-color: rgb(170, 154, 190) ;
+   transition: ease-in-out 0.3s;
+ }
+
+ .book-button{
+   display: inline;
+   /* align-items: center; */
+   /* justify-content: center; */
+   color: #fff;
+   border: solid transparent 2px;
+   border-radius: 50px;
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 0.7rem 3rem;
+ }
+
+ .book-btn {
+   background-color: #009970;
+   color: #fff;
+   font-size: 30px;
+   padding: 8px 20px;
+   border-radius: 50px;
+   text-decoration: none;
+   transition: 0.3s background-color;
+   /* display: inline-block; */
+}

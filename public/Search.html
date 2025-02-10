@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Trains</title>
+<link rel="stylesheet" href="Search.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="myForm">
+            <div class="dropdown">
+                <input type="text" id="boardingStation" placeholder="Boarding Station">
+                <div class="dropdown-content" id="boardingStationList"></div>
+            </div>
+            <div class="dropdown">
+                <input type="text" id="destination" placeholder="Destination">
+                <div class="dropdown-content" id="destinationList"></div>
+            </div>
+            <div class="dropdown">
+                <input type="date" id="date" placeholder="Date">
+            </div>
+            <div class="submit">
+                <input type="submit" value="Search">
+            </div>
+        </form>
+    </div>
+    <div id="loginPromptModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLoginPrompt">&times;</span>
+            <h2>Login Required</h2>
+            <p>Please log in to search for trains.</p>
+        </div>
+    </div>
+<script src="script_Search.js"></script>
+</body>
+</html>

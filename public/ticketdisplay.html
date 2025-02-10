@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Card</title>
+    <link rel="stylesheet" href="style_ticketdispaly.css">
+</head>
+<body>
+    <div class="button-container">
+        <button id="download-button">Download Ticket as PDF</button>
+        <button id="home-button">Continue to Home</button>
+    </div>
+    <div class="ticket-card" id="ticket">
+        <div class="ticket-header">
+            <h2>Train Ticket</h2>
+        </div>
+        <div class="ticket-body">
+            <div class="ticket-details">
+                <div>
+                    <span>Train Name:</span>
+                    <span id="train-name">Express Line 101</span>
+                </div>
+                <div>
+                    <span>Boarding Station:</span>
+                    <span id="boarding-station">Boston</span>
+                </div>
+                <div>
+                    <span>Destination:</span>
+                    <span id="destination">New York</span>
+                </div>
+                <div class="time-container">
+                    <span id="departure-time">10:00 AM</span>
+                    <span class="time-separator">-> </span>
+                    <span id="arrival-time">02:00 PM</span>
+                </div>
+            </div>
+            <div class="barcode">
+                <img src="images/barcode.avif" alt="Barcode">
+            </div>
+            <div class="passenger-details">
+                <h3>Passenger Details</h3>
+                <div id="passenger-list"> 
+                </div>
+            </div>
+        </div>
+        <div class="ticket-footer">
+            <p>Have a safe journey!</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="script_ticketdisplyay.js"></script>
+</body>
+</html>

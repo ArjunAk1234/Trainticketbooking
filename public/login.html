@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style_login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>Login Form</header>
+    <form id="login-form" action="#">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" id="logemail-login" placeholder="Email Address" required>
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Email can't be blank</div>
+      </div>
+      <div class="field phone">
+        <div class="input-area">
+          <input type="tel" id="logphone-login" placeholder="Phone Number" required>
+          <i class="icon fas fa-phone"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Phone number can't be blank</div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" id="logpass-login" placeholder="Password" required>
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Password can't be blank</div>
+      </div>
+      <div class="field captcha">
+        <div class="input-area">
+          <input type="text" id="captcha-login" placeholder="Enter CAPTCHA" required>
+          <button id="refresh-captcha">Refresh</button>
+        </div>
+        <div class="error error-txt">CAPTCHA can't be blank</div>
+        <div id="captcha-display" class="captcha-display"></div>
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Login">
+      </div>
+    </form>
+    <div class="sign-txt">Not yet a member? <a href="signup.html">Signup now</a></div>
+  </div>
+  <script src="script_login.js"></script>
+</body>
+</html>

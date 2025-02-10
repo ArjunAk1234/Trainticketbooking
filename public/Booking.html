@@ -1,0 +1,72 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking</title>
+    <link rel="stylesheet" href="style_Booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <h1>Train Booking</h1>
+    <div class="steps">
+        <div class="step active" data-step="passenger-details">Passenger Details</div>
+        <div class="step" data-step="review-journey">Review Journey</div>
+        <div class="step" data-step="payment">Payment</div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="box train-details">
+        <h2>Train Details</h2>
+        <p><strong>Train Name:</strong> Malabar Express</p>
+        <p><strong>Departure:</strong> Nileshwar - 10:00 pm</p>
+        <p><strong>Arrival:</strong> Kayamkulam - 10:00 am</p>
+    </div>
+    <div class="box passenger-details">
+        <h2>Passenger Details</h2>
+        <form id="passenger-form">
+            <label for="num-passengers">Number of Passengers</label>
+            <input type="number" id="num-passengers" name="num-passengers" min="1" max="10" required><br><br>
+            <div id="passenger-inputs">
+                <!-- Passenger input fields will be dynamically added here -->
+            </div>
+            <button type="button" class="btn" id="next-review">Next</button>
+        </form>
+    </div>
+    <div class="box review-journey" style="display: none;">
+        <h2>Review Journey</h2>
+        <div id="review-details"></div>
+        <button class="btn" id="next-payment">Next</button>
+    </div>
+    <div class="box payment-details" style="display: none;">
+        <h2>Payment Details</h2>
+        <p><strong>Total Amount:</strong> 250</p>
+        <p><strong>Payment Status:</strong> Pending</p>
+        <img style="width: 100px;" src="images/qr codde.png" alt="UPI QR Code"><br><br><br>
+        <a onclick="validateForm()" class="btn" id="openModalBtn">Payment (Completed by via UPI)</a>
+        <a href="payment.html" class="btn" target="_blank">Credit Card Check Out</a>
+    </div>
+    <div class="box payment-mode" style="display: none;">
+        <h2>Payment Mode</h2>
+    </div>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Payment Successful!</h2>
+        <p>Thank you for your payment. Your order has been successfully processed.</p>
+        <button class="btn" onclick="viewTicket()">View Ticket</button>
+    </div>
+</div>
+
+<script src="script_Booking.js">
+   
+</script>
+
+</body>
+</html>
